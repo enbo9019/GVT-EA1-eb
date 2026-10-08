@@ -4,10 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GVT – EA1</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+
+   <header class="page-header">
     <h1>EA1 – Interaktiv animierte Scheibe</h1>
-    <p>GitHub Pages funktioniert.</p>
+
+    <p>
+        Eine JavaScript-basierte Einzelbildanimation mit zusätzlicher
+        Sprite-Sheet-Animation.
+    </p>
+    </header>
+
+    <main>
+
+        <section class="disc-section">
+            <h2>Interaktive Scheibe</h2>
+
+            <img
+                id="disc"
+                src="images/disc_00.png"
+                alt="Animierte Spiele-CD"
+            >
+
+            <div class="button-controls">
+                <button id="leftButton" type="button">← Links</button>
+                <button id="autoButton" type="button">▶ Automatik</button>
+                <button id="rightButton" type="button">Rechts →</button>
+            </div>
+
+            <h3>Steuerung</h3>
+
+            <ul class="controls">
+                <li><strong>L</strong> – Scheibe nach links drehen</li>
+                <li><strong>R</strong> – Scheibe nach rechts drehen</li>
+                <li><strong>A</strong> – automatische Rotation starten / stoppen</li>
+            </ul>
+
+            <p id="status" aria-live="polite">
+                Automatische Rotation: aus
+            </p>
+        </section>
+
+        <section class="car-section">
+            <h2>Sprite-Sheet-Animation</h2>
+
+            <div
+                id="carSprite"
+                class="car-sprite"
+                role="img"
+                aria-label="Animiertes Auto"
+            ></div>
+
+            <p>
+            Zusätzliche Sprite-Sheet-Animation eines vorbeifahrenden Autos.
+            </p>
+        </section>
+
+       <section class="information">
+    <h2>Hinweise und Quellen</h2>
+
+    <p>
+        Die Scheibe kann mit den Tasten L und R schrittweise gedreht werden.
+        Mit A wird die automatische Rotation gestartet und wieder angehalten.
+    </p>
+
+    <p>
+        <strong>Bildmaterial:</strong>
+        Die Ausgangsbilder der Spiele-CD und des Autos wurden mit ChatGPT
+        generiert und anschließend für diese Aufgabe eigenständig bearbeitet
+        und zu den verwendeten Einzelbildern bzw. dem Sprite-Sheet
+        zusammengestellt.
+    </p>
+</section>
+
+    </main>
+
+    <script src="js/app.js"></script>
+
 </body>
 </html>
